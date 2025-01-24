@@ -3,6 +3,67 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>My Random Page</title>
+		<style>
+        body {
+            display: grid;
+			background-color: Pink;
+            grid-template-areas: 
+                "header header"
+                "content content"
+                "footer footer";
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr;
+            margin: 0;
+			
+            font-family: Arial, sans-serif;
+        }
+        header {
+            grid-area: header;
+            text-align: center;
+            padding: 10px;
+			background-color: PaleVioletRed;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            grid-area: footer;
+            text-align: center;
+            padding: 10px;
+			background-color: PaleVioletRed;
+        }
+        sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 100%;
+			background-color: Pink;
+            padding: 10px;
+        }
+        sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        sidebar li {
+            margin-bottom: 10px;
+        }
+        div {
+            grid-area: content;
+            margin-right: 220px;
+            padding: 20px;
+			text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 	</head>
 	<body>
 		<header>
