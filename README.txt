@@ -1,0 +1,1 @@
+This will be a project creating a simple webpage with a header, footer, sidebar, etc.
